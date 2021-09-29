@@ -55,3 +55,11 @@ $('#content').on('click', function(){
       $('#main-navigation').removeClass('main-navigation-open');
     }
   });
+
+$("#main-navigation li a").on("click", function() {
+    var p = this;
+    $("#main-navigation li a").each(function() {
+        this.color = this == p ? '#1fa0ae' : '#333';
+    });
+    console.log('click');
+});
