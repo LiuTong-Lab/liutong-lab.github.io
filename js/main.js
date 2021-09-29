@@ -56,7 +56,23 @@ $('#content').on('click', function(){
     }
   });
 
-$(function() {
+
+  $(function() {
 	var url = window.location.href;
-	console.log(url);
+	if(url.indexOf("%E9%A6%96%E9%A1%B5") != -1) {
+		$("#main-nav li a").css("color", "#333");
+		$("#main-nav li:nth-child(1) a").css("color", "#1fa0ae");
+	} else if(url.indexOf("%E8%AE%BA%E6%96%87%E5%88%97%E8%A1%A8") != -1) {
+		$("#main-nav li a").css('color', '#333');
+		$("#main-nav li:nth-child(2) a").css('color', '#1fa0ae');
+
+	} else if(url.indexOf("%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%E4%BB%8B%E7%BB%8D") != -1) {
+		$("#main-nav li a").css('color', '#333');
+		$("#main-nav li:nth-child(3) a").css('color', '#1fa0ae');
+
+	} else {
+		$("#main-nav li a").css('color', '#333');
+		$("#main-nav li:nth-child(4) a").css('color', '#1fa0ae');
+
+	}
 });
