@@ -70,9 +70,12 @@ $('#content').on('click', function(){
 		$("#main-nav li a").css('color', '#333');
 		$("#main-nav li:nth-child(3) a").css('color', '#1fa0ae');
 
+	} else if(url == 'https://liutong-lab.github.io/') {
+		$("#main-nav li a").css('color', '#333');
+		$("#main-nav li:nth-child(1) a").css('color', '#1fa0ae');
+
 	} else {
 		$("#main-nav li a").css('color', '#333');
 		$("#main-nav li:nth-child(4) a").css('color', '#1fa0ae');
-
 	}
 });
