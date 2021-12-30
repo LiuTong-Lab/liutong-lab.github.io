@@ -7,16 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <style>
-        * {
+* {
             margin: 0;
             padding: 0;
         }
-
+        
+        html, body {
+            margin: 5px 0 0 0;
+        }
         #slider,
         ul,
         a {
             width: 100%;
-            height: 400px;
+            height: 420px;
         }
 
         #slider {
@@ -40,13 +43,13 @@
 
         li {
             float: left;
-            width: 647.2px;
-            height: 400px;
+            width: 940px;
+            height: 420px;
         }
 
         a {
-            width: 647.2px;
-            height: 400px;
+            /* width: 647.2px; */
+            height: 420px;
             display: inline-block;
         }
         a:link, a:visited, a:active, a:hover {
@@ -55,7 +58,8 @@
         }
 
         img {
-            height: 400px;
+            height: 420px;
+            zoom: 90%;
             /* margin-top: 25px 0; */
             /* display: inline; */
             vertical-align: middle;
@@ -70,7 +74,7 @@
             width: 100%;
             height: 50px;
             top: 50%;
-            margin-top: -25px;
+            margin-top: -40px;
             display: none;
         }
 
@@ -101,7 +105,7 @@
             width: 150px;
             height: 30px;
             line-height: 30px;
-            bottom: 0;
+            bottom: 10px;
             left: 50%;
             margin-left: -75px;
             text-align: center;
@@ -125,6 +129,7 @@
             display: -webkit-flex;
             flex-direction: row;
             justify-content: space-between;
+            vertical-align: middle;
             align-items: center;
         }
         .left-img {
@@ -134,7 +139,8 @@
             overflow: hidden;
             text-overflow: ellipsis;
             text-align: justify;
-            font-size: 6px;
+            font: 14px Arial, Helvetica, sans-serif, "Hiragino Sans GB", "Hiragino Sans GB W3", Microsoft JhengHei;
+            line-height: 1.6em;
         }
         .right-abs:hover {
             overflow: hidden;
@@ -146,15 +152,15 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        .f1 {flex: 1; height: 400px; flex-shrink: 0;}
-        .f2 {flex: 2; height: 400px; flex-shrink: 0;}
-        .f3 {flex: 3; height: 400px; flex-shrink: 0;}
-        .f4 {flex: 4; height: 400px; flex-shrink: 0;}
-        .f5 {flex: 5; height: 400px; flex-shrink: 0;}
-        .f6 {flex: 6; height: 400px; flex-shrink: 0;}
-        .f7 {flex: 7; height: 400px; flex-shrink: 0;}
-        .f8 {flex: 8; height: 400px; flex-shrink: 0;}
-        .f9 {flex: 9; height: 400px; flex-shrink: 0;}
+        .f1 {flex: 1; height: 420px; flex-shrink: 0;}
+        .f2 {flex: 2; height: 420px; flex-shrink: 0;}
+        .f3 {flex: 3; height: 420px; flex-shrink: 0;}
+        .f4 {flex: 4; height: 420px; flex-shrink: 0;}
+        .f5 {flex: 5; height: 420px; flex-shrink: 0;}
+        .f6 {flex: 6; height: 420px; flex-shrink: 0;}
+        .f7 {flex: 7; height: 420px; flex-shrink: 0;}
+        .f8 {flex: 8; height: 420px; flex-shrink: 0;}
+        .f9 {flex: 9; height: 420px; flex-shrink: 0;}
 
     </style>
 </head>
@@ -164,12 +170,12 @@
         <ul class="slieder-item-container">
             <li>
                 <div class="box">
-                    <div class="left-img f4">
-                        <img src="../images/wu-kbs.png">
+                    <div class="left-img f3">
+                        <a target="_blank" href="../images/edge-1-1.png"><img src="../images/edge-1-1.png"></a>
                     </div>
                     <!-- <div class="f1"></div> -->
-                    <div class="right-abs f5">
-                        <span><b>Abstract</b> —— As a flexible public transportation in urban areas, taxis play an important role in providing comfortable and convenient services for passengers. Due to the existence of the imbalance between supply of drivers and demand of passengers, an accurate fine-grained taxi demand prediction in real time can help guide drivers to plan their routes and reduce the waiting time of passengers. Recently, several methods based on deep neural networks have been provided to predict taxi demands. However, these works are limited in properly incorporating multi-view features of taxi demands together, with considering the influences of context information. In this paper, we propose a convolutional recurrent network model for fine-grained taxi demand prediction. Local convolutional layers and gated recurrent units are employed in our model to extract multi-view spatial–temporal features of taxi demands. Moreover, a novel context-aware attention module is designed to incorporate the predictions of each region with considering its contextual information, which is our first attempt. We also conduct comprehensive experiments based on multiple real-world datasets in New York City and Chengdu. The experimental results show that our model outperforms state-of-the-art methods, and validate the usefulness of each module in our model.</span>
+                    <div class="right-abs f7">
+                        <span><i><b>Abstract</b></i>——Due to the explosion of mobile devices and the evolution of wireless communication technologies, novel applications with intensive computation demands and low-latency requirements have arisen. Edge computing has been proposed as an extension of cloud computing, which moves computation workloads from remote cloud to network edge. Cooperating edge computing and cloud computing can signiﬁcantly reduce the latency of computation tasks. However, considering the heterogeneity and stochastic arrivals of tasks and the limited computation and communication resources on the edge, task ofﬂoading and resource allocation are two joint crucial problems in an edge-cloud orchestrated computing system. In this paper, we propose an online task ofﬂoading and resource allocation approach for edge-cloud orchestrated computing, with the aim to minimize the average latency of tasks over time. We ﬁrstly build system models to analyze the latency and energy consumption incurred under different computing modes and formally formulate the joint problem as a mixed-integer optimal decision problem. Then, we employ Lyapunov optimization and duality theory to decompose the problem into a set of subproblems, which can be solved in a semi-decentralized way. We also formally analyze that our approach can achieve near-optimal performance. Extensive simulations are conducted to verify the superiority of our approach.</span>
                     </div>
                 </div>
                 
@@ -177,11 +183,11 @@
             <li>
                 <div class="box">
                     <div class="left-img f4">
-                        <img src="../images/yang-bigcom.png">
+                        <a target="_blank" href="../images/edge-1-2.png"><img src="../images/edge-1-2.png"></a>
                     </div>
                     <!-- <div class="f1"></div> -->
                     <div class="right-abs f6">
-                        <span><b>Abstract</b> ——— Short-term passenger ﬂow forecasting is signiﬁcantly important in the urban rail transit system. However, there are many factors that affect passenger ﬂows, and traditional statistical prediction methods are unable to model these complex factors comprehensively. Emerging deep learning models have become effective methods to overcome this problem. In this study, we propose a new deep learning model MGSTCN (Multi-Graph Spatio-Temporal Convolutional Network) to predict short-term passenger ﬂows for all stations in an urban subway network. Speciﬁcally, MGSTCN is composed of three modules with the same structure, which models the temporal dependencies of passenger ﬂows in three different time scales, i.e., recent, daily and weekly periods respectively. Each module contains three main components: a multi-graph convolutional layer, a feature fusion layer, and a recurrent neural network. In addition, we construct three topological graphs based on the subway network, station attributes, and passenger ﬂow trends, to extract spatial features from different perspectives through graph convolutional networks. Besides, we also employ some external factors such as weather conditions and holidays to enhance the forecasting accuracy of our proposed model. We conduct experiments based on two real-world passenger ﬂow datasets in Shanghai and Hangzhou, respectively. The results show that our proposed model has superior performance compared to the baselines.</span>
+                        <span><i><b>Abstract</b></i>——Due to the development of 5G networks, computation intensive applications on mobile devices have emerged, such as augmented reality and video stream analysis. Mobile edge computing is put forward as a new computing paradigm, to meet the low-latency requirements of applications, by moving services from the cloud to the network edge like base stations. Due to the limited storage space and computing capacity of an edge server, service placement is an important issue, determining which services are deployed at edge to serve corresponding tasks. The problem becomes particularly complicated, with considering the stochastic arrivals of tasks, the additional latency incurred by service migration, and the time spent for waiting in queues for processing at edge. Benefiting from reinforcement learning, we propose a deep Q network based approach, by formulating service placement as a Markov decision process. Real-time service placement strategies are output, to minimize the total latency of arrived tasks in a long term. Extensive simulation results demonstrate that our approach works effectively.</span>
                     </div>
                 </div>
             </li>

@@ -66,7 +66,7 @@ $('#content').on('click', function(){
 		$("#main-nav li a").css('color', '#333');
 		$("#main-nav li:nth-child(2) a").css('color', '#1fa0ae');
 
-	} else if(url.indexOf("%E7%A0%94%E7%A9%B6%E6%96%B9%E5%90%91%E4%BB%8B%E7%BB%8D") != -1) {
+	} else if(url.indexOf("%E7%A0%94%E7%A9%B6%E6%88%90%E6%9E%9C") != -1) {
 		$("#main-nav li a").css('color', '#333');
 		$("#main-nav li:nth-child(3) a").css('color', '#1fa0ae');
 
